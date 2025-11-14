@@ -29,7 +29,7 @@ async function runZapApiCallWithRetry(
 
       if (isConnectionError) {
         const delay = initialDelay * Math.pow(2, i);
-        console.log(`ZAP API Connection unstable (Attempt ${i + 1}/${maxRetries}). Retrying in ${delay / 1000}s...`);
+        console.log(`ZAP API connection unstable (Attempt ${i + 1}/${maxRetries}). Retrying in ${delay / 1000}s...`);
         await new Promise(resolve => setTimeout(resolve, delay));
       } else {
         throw e;
@@ -119,7 +119,7 @@ export async function waitForZAP() {
       const response = await fetch("http://127.0.0.1:8080");
       if (response.ok) {
         isReady = true;
-        console.log("ZAP is ready!");
+        console.log("✅ ZAP is ready!");
         break;
       }
     } catch (e) {

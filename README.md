@@ -1,6 +1,6 @@
 # Security Testing
 
-This repository contains automated security tests for the e-commerce demo using Playwright (for the browser interactions and passing the URLs to OWASP ZAP for the security scanning) and OWASP ZAP (for performing the actual security testing) to help you identify vulnerabilities, like Cross-Site Scripting (XSS), SQL Injection, security misconfigurations and more.
+This repository contains automated security tests for a store demo website using Playwright (for the browser interactions and passing the URLs to OWASP ZAP for the security scanning) and OWASP ZAP (for performing the actual security testing) to help you identify vulnerabilities, like Cross-Site Scripting (XSS), SQL Injection, security misconfigurations and more.
 
 ## 🔧 How to Run
 

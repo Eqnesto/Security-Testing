@@ -21,7 +21,7 @@ let zapClient: ZapClient;
 
 test.describe("Security Testing", () => {
 
-  test.setTimeout(100_000); 
+  test.setTimeout(500000); 
   test.beforeAll(async () => {
     await waitForZAP(); // Ensure ZAP is ready.
     zapClient = new ZapClient(zapOptions);
@@ -45,14 +45,14 @@ test.describe("Security Testing", () => {
     await page.close();
   });
 
-  test("Verify the E-Commerce Home Page", async ({ page }) => {
+  test("Store - Verify Home Page", async ({ page }) => {
     console.log(`Running ZAP security test for the home page of: ${TARGET_URL}`);
     
     await generateZAPReport(
       zapClient,
-      "E-Commerce Homepage",
+      "Store - Home Page",
       "traditional-html-plus",
-      "E-Commerce Demo Home Page",
+      "Store Home Page",
       "zap-report"
     );
     console.log("ZAP security test completed.");

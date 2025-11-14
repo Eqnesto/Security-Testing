@@ -1,4 +1,4 @@
-# Security Testing
+# 🛡️ Security Testing
 
 This repository contains automated security tests for a store demo website using Playwright for browser interaction and passing URLs to OWASP ZAP for security scanning. It identifies vulnerabilities like XSS, SQL Injection, and security misconfigurations.
 

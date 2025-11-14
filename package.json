@@ -1,0 +1,16 @@
+{
+  "name": "security-testing",
+  "version": "1.0",
+  "author": "Eqnesto",
+  "description": "Playwright project for security testing with ZAP.",
+  "main": "index.js",
+  "scripts": {
+    "security": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.1",
+    "dotenv": "^16.4.5",
+    "zaproxy": "^2.0.0-rc.6"
+  }
+}
